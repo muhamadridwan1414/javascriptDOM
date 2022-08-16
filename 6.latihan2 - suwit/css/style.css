@@ -1,0 +1,153 @@
+body {
+	font-family: sans-serif;
+	background: url(../img/background/7.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.judul {
+	font-size: 42px;
+	color: #ddd;
+	text-align: center;
+	text-shadow: -1.2px -1.2px 1px rgba(0,0,0,1),
+	1.2px 1.2px 1px rgba(0,0,0,1),
+	4px 4px 8px rgba(0,0,0,.6);
+	margin : 20px auto;
+}
+
+.container {
+	position: relative;
+	max-width: 600px;
+	overflow: hidden;
+	border-radius: 5%;
+	margin: auto;
+	margin-top: -10px;
+}
+
+.container img {
+	width: 150px;
+}
+
+.container .area-computer {
+	position: relative;
+	width: 100%;
+	height: 275px;
+	background-color: royalblue;
+	text-align: center;
+}
+
+.container .area-computer img {
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #eaeaea;
+	margin-top: 55px;
+	border-radius: 50%;
+	border: 2px solid #333;
+}
+
+.container .area-player {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 275px;
+	margin-top: 5px;
+	background-color: limegreen;
+}
+
+.area-player ul li{
+	display: inline;
+}
+
+.container .area-player img {
+	width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #eaeaea;
+	margin-top: 55px;
+	border-radius: 50%;
+	border: 2px solid #333;
+	margin-left: 4%;
+}
+
+.area-computer .skor,
+.area-player .skor {
+	font-weight: bold;
+}
+
+
+.info {
+	position: absolute;
+	top: 245px;
+	left: 150px;
+	width: 175px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: white;
+	border: 5px solid salmon;
+	color: salmon;
+	font-weight: bold;
+	z-index: 99;
+}
+
+
+.batu,.gunting,.kertas {
+	transition: .3s;
+	cursor: pointer;
+}
+
+.batu:hover,.gunting:hover,.kertas:hover,.active {
+	box-shadow: 0 0 10px 5px lightseagreen;
+}
+
+
+.clear {
+	clear: left;
+}
+
+
+.area-computer .skor,
+.area-player .skor {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: white;
+	border: 5px solid salmon;
+	border-radius: 50%;
+	color: salmon;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+.footer{
+	opacity: 0;
+}
+
+
+@media(min-width: 600px) {
+	.info {
+		position: absolute;
+		top: 245px;
+		left: 205px;
+		width: 175px;
+		z-index: 99;
+	}
+
+	.footer{
+	    background-color: #fff;
+	    width: 340px;
+	    height: 40px;
+	    line-height: 40px;
+	    color: #333;
+	    position: relative;
+	    margin-top: -40px;
+	    margin-left: 0;
+	    opacity: 1;
+	}
+
+	.footer a{
+		text-decoration: none;
+	}
+}
